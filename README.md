@@ -1,11 +1,39 @@
+# Rapport de réalisation
+# Projet réalisé par :
+
+HOURMAND Rémi / remi.hourmand@etudiant.univ-rennes1.fr
+
+DAHLEM Kilian / kilian.dahlem@etudiant.univ-rennes1.fr
+
+Sur ce repos, vous trouverez :
+
+La partie Reslet / JaxRS / OpenAPI du TP5
+
+Le tp JPA ainsi que la partie Servlet du TP5 se trouve sur un autre repos.
+Le repos en question : https://github.com/kilianDahlem/tp-JPA-Servlet
+
+# Lancer le projet
+
+Suivez les étapes ci-dessous :
+
+1. Exécutez la classe RestServer
+
+2. Ouvrez votre navigateur favoris et rendez-vous à l'url suivante : http://localhost:8080/api/
+
+Vous avez accès à l'ensemble des possibilités API.
+
+# Informations complémentaires
+
+Ce repos ne contient que 2 commits car nous avons ré-organisé notre GIT.
+Ce repos a donc été créé spécialement pour le rendu du TP.
+
+------------------------------
 ## JaxRS + openAPI
 
 1. Import this project in your IDE, 
 2. Start the database
 3. Start the database viewer
 4. Start the backend. There is a main class to start the backend
-
-
 
 
 # Task Open API Integration 
