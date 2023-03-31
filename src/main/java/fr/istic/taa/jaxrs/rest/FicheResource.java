@@ -7,20 +7,24 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Response;
 
 import fr.istic.taa.jaxrs.domain.*;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.annotations.Api;
 
 @Path("/fiche")
 @Produces({"application/json"})
+@Api(value = "/customerservice", description = "Operations about customerservice")
+@ApplicationPath("Fiche")
 public class FicheResource {
 
     @GET
     @Path("/{ficheId}")
     public Fiche getFicheById(@PathParam("ficheId") Long ficheId)  {
         // return fiche
-        return new Fiche();
+        return new FicheBug();
     }
 
     @POST

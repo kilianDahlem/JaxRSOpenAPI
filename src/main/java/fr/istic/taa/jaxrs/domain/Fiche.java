@@ -6,7 +6,6 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "Type")
-
 public abstract class Fiche {
     private Long ticket_id;
 

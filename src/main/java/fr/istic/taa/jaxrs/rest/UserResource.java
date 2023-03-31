@@ -9,6 +9,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import fr.istic.taa.jaxrs.domain.*;
+import fr.istic.taa.jaxrs.dao.generic.*;
+
 import io.swagger.v3.oas.annotations.Parameter;
 
 @Path("/user")
@@ -19,7 +21,7 @@ public class UserResource {
     @Path("/{userId}")
     public User getUserById(@PathParam("userId") Long userId)  {
         // return user
-        return new User();
+        return UserDao.getUserFromDatabase(Integer.parseInt(userId.toString()));
     }
 
     @POST
